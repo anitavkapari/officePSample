@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ body {
+  background-image: url("./img/back.png");
+background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+    #profile-image {
+        width:35%;
+        height:5%;
+}
+ #middle-container-image {
+        width:41%;
+        height:27%;
+        }
+
+
+    #bottom-container-image {
+        width:15%;
+        height:50%;
+}
+
+.single-button-row{
+  display: flex;
+                    flex-grow: 3;
+            justify-content: center;
+          flex-direction: row;
+
+}
+
+    .multi-button-row{
+  display: flex;
+                    flex-grow: 3;
+            justify-content: center;
+          flex-direction: row;
+
+}
+
+    .mid-container {
+  display: flex;
+                    flex-grow: 6;
+          flex-direction: column;
+                 width: 30%;
+                  height: 30%;
+
+  margin-top:35;
+
+}
+
+  .bottom-container {
+  display: flex;
+                    flex-grow: 7;
+          flex-direction: column;
+                  height: 10%;
+
+ margin-top:90;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+ flex: 30%;
+  padding: 0px;
+  text-align: center;
+
+}
+
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 40%;
+
+  padding: 7px;
+}
+
+/* Main column */
+.main {
+  flex: 30%;
+
+  padding: 7px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+
